@@ -4,8 +4,8 @@
     <string name="app_name">DanSimpleBrowser</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_web_view">Dans Browser</string>
+    <string name="title_activity_web_view">Dan's Browser</string>
     <string name="urlhint">Enter URL to Open</string>
-    <string name="btn">Serach</string>
+    <string name="btn">Open</string>
 
 </resources>
