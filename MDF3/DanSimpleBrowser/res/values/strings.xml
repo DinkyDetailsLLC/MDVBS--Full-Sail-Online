@@ -6,6 +6,6 @@
     <string name="menu_settings">Settings</string>
     <string name="title_activity_web_view">Dans Browser</string>
     <string name="urlhint">Enter URL to Open</string>
-    <string name="btn">Serach</string>
+    <string name="btn">Search</string>
 
 </resources>
