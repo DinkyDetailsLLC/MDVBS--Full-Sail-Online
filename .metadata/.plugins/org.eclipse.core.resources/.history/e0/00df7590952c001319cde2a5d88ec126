@@ -19,29 +19,21 @@ public class WebViewActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_view);
         
-        //Connecting the views/components to their IDs
+        //Connecting the views/compenents to their IDs
         urlEditText = (EditText) findViewById(R.id.urlField);
 		webView = (WebView) findViewById(R.id.webView);
 		//Creating a function to handle override of the webview and load the URL 
 		webView.setWebViewClient(new MyWebViewClient());
-		
     }
 
-	//extends the WebClient View since we can't show a webpage in an activity
+	//Function to override the current view with the view/source being pushed into the browser.
     private class MyWebViewClient extends WebViewClient {
 		@Override
 		public boolean shouldOverrideUrlLoading(WebView view, String url) {
 			view.loadUrl(url);
 			return true;
 		}
-    
-    //passing the URL from edit text/implicit to load. 
-	@Override
-	public void onPageFinished(WebView view, String url) {
-		super.onPageFinished(view, url);
-	}
 
-}
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

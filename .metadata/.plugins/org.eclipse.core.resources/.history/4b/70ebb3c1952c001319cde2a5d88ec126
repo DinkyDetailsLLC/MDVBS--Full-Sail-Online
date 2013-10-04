@@ -34,14 +34,7 @@ public class WebViewActivity extends Activity {
 			view.loadUrl(url);
 			return true;
 		}
-    
-    //passing the URL from edit text/implicit to load. 
-	@Override
-	public void onPageFinished(WebView view, String url) {
-		super.onPageFinished(view, url);
-	}
-
-}
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
