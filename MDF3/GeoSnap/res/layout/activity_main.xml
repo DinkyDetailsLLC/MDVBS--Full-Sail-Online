@@ -58,7 +58,7 @@
         android:layout_marginTop="20dp"
         android:layout_weight="1"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/noimage"  />
+        android:src="@drawable/noimage" />
 
     <LinearLayout
         android:id="@+id/piclayout"
