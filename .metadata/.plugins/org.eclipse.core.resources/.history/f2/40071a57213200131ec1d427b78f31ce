@@ -35,8 +35,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnClickListener {
-	
-	//Variables setup
 	private static final int CAMERA_PIC_REQUEST = 1111;
 	private ImageView mImage;
 	private TextView mBatteryInfo;
@@ -49,7 +47,6 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	private LinearLayout mNameLayout;
 
-	//additional misc variables
 	int level = 0;
 	Context ctx;
 	GPSTracker gps;
@@ -60,19 +57,16 @@ public class MainActivity extends Activity implements OnClickListener {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		//Setting app to a full screen layout
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_main);
-		//Changing the font type
+
 		Typeface fontAller = Typeface.createFromAsset(getAssets(),
 				"font/Aller.ttf");
-		
-		//Adding an intent Action to understand the battery and its information
+
 		this.registerReceiver(this.batteryInfoReceiver, new IntentFilter(
 				Intent.ACTION_BATTERY_CHANGED));
-		
-		//identifying the components.
+
 		mNameLayout = (LinearLayout) findViewById(R.id.namelayout);
 
 		mBatteryInfo = (TextView) findViewById(R.id.batteryinfo);
@@ -87,13 +81,11 @@ public class MainActivity extends Activity implements OnClickListener {
 		mSavePic = (Button) findViewById(R.id.savepic);
 		mGetLocation = (Button) findViewById(R.id.getloc);
 		mBatteryStats = (Button) findViewById(R.id.checkbattery);
-		//setting fonts
 		mSaveName.setTypeface(fontAller);
 		mTakePic.setTypeface(fontAller);
 		mSavePic.setTypeface(fontAller);
 		mGetLocation.setTypeface(fontAller);
 		mBatteryStats.setTypeface(fontAller);
-		//setting the listeners for the buttons
 		mSaveName.setOnClickListener(this);
 		mTakePic.setOnClickListener(this);
 		mSavePic.setOnClickListener(this);
@@ -101,14 +93,14 @@ public class MainActivity extends Activity implements OnClickListener {
 		mBatteryStats.setOnClickListener(this);
 
 	}
-	//Grabbing the battery info %
+
 	private BroadcastReceiver batteryInfoReceiver = new BroadcastReceiver() {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, 0);
 		}
 	};
-	//Picture formatting and handling the cancel button
+
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if (requestCode == CAMERA_PIC_REQUEST && data != null && resultCode != 0) {
 			Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
@@ -120,7 +112,7 @@ public class MainActivity extends Activity implements OnClickListener {
 					.show();
 		}
 	}
-	//Setting up the view
+
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
@@ -138,7 +130,6 @@ public class MainActivity extends Activity implements OnClickListener {
 		case R.id.getloc:
 			mNameLayout.setVisibility(View.GONE);
 			gps = new GPSTracker(MainActivity.this);
-			//get the location and use the GPS Tracker to get Geo Point
 			if (gps.canGetLocation()) {
 				latitude = gps.getLatitude();
 				longitude = gps.getLongitude();
@@ -152,7 +143,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			}
 
 			break;
-		//Save the filename to the string.. make sure there is something
+
 		case R.id.savename:
 			String picName = mPicName.getText().toString().trim();
 			if (picName.length() > 0) {
@@ -163,7 +154,7 @@ public class MainActivity extends Activity implements OnClickListener {
 						Toast.LENGTH_SHORT).show();
 			}
 			break;
-		//Setting up a case for if the battery is less than 20, turn off the GPS
+
 		case R.id.checkbattery:
 			mNameLayout.setVisibility(View.GONE);
 			mBatteryInfo.setText("Current level of battery is : " + level);
@@ -181,15 +172,14 @@ public class MainActivity extends Activity implements OnClickListener {
 		}
 
 	}
-	//Wanted to add the location to the name if the user chooses
+
 	private void showAlertforLocation(final String picName) {
 		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
 		alertDialogBuilder.setTitle("Location?");
-		//setting up the alert and the functions to handle the answer
+
 		alertDialogBuilder
 				.setMessage("Would you like to Include Location in Picture name?")
 				.setCancelable(false)
-				//If yes, save the file
 				.setPositiveButton("Yes",
 						new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog, int id) {
@@ -215,7 +205,6 @@ public class MainActivity extends Activity implements OnClickListener {
 										e.printStackTrace();
 									}
 								} else {
-									//check to make sure location was clicked and a pic was taken
 									Toast.makeText(
 											MainActivity.this,
 											"No Picture was found, Did you check your Location first?",
@@ -224,8 +213,6 @@ public class MainActivity extends Activity implements OnClickListener {
 								//MainActivity.this.finish();
 							}
 						})
-						
-				//If user clicks no, let it go and just save the name
 				.setNegativeButton("No", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int id) {
 						if (bytes != null) {
@@ -257,7 +244,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		AlertDialog alertDialog = alertDialogBuilder.create();
 		alertDialog.show();
 	};
-	//Using the geocoder to take the lat and long and convert it to physical address
+
 	private String findUsersAddress(double latitude, double longitude) {
 		String userAddress = null;
 		Geocoder gc = new Geocoder(this, Locale.getDefault());
@@ -295,7 +282,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		}
 		return userAddress;
 	}
-  //turn the gps off
+
 	private void turnGPSOnOff() {
 		String provider = Settings.Secure.getString(getContentResolver(),
 				Settings.Secure.LOCATION_PROVIDERS_ALLOWED);
