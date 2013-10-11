@@ -128,7 +128,6 @@ public class MainActivity extends Activity implements OnClickListener {
 			break;
 
 		case R.id.getloc:
-			mNameLayout.setVisibility(View.GONE);
 			gps = new GPSTracker(MainActivity.this);
 			if (gps.canGetLocation()) {
 				latitude = gps.getLatitude();
