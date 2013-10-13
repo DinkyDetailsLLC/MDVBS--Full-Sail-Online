@@ -34,7 +34,7 @@ public class WebViewActivity extends Activity {
         
         //Connecting the views/components to their IDs
         urlEditText = (EditText) findViewById(R.id.urlField);
-        //Text helper for pre-formatted URL
+        //Text helper for preformatted URL
         urlEditText.setText("Http://www.");
         urlEditText.setSelection(urlEditText.getText().length());
         
