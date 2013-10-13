@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.graphics.Color;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.Menu;
@@ -36,6 +37,7 @@ public class WebViewActivity extends Activity {
 		webView = (WebView) findViewById(R.id.webView);
 		//Creating a function to handle override of the webview and load the URL 
 		webView.setWebViewClient(new MyWebViewClient());
+		webView.setBackgroundColor(Color.parseColor("#77c9ef"));
 		
 		//Setting up the onclick listener for the button
 		Button openUrl = (Button) findViewById(R.id.goButton);
