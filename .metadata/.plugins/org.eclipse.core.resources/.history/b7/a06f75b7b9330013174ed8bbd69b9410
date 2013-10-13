@@ -7,6 +7,5 @@
     <string name="title_activity_web_view">Dans Browser</string>
     <string name="urlhint">Enter URL to Open</string>
     <string name="btn">Search</string>
-    <string name="visitedurls">Site History</string>
 
 </resources>
