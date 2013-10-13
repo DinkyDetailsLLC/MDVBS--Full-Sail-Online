@@ -8,7 +8,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Intent;
 import android.graphics.Color;
 import android.util.Log;
 import android.util.Patterns;
@@ -20,7 +19,8 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-public class WebViewActivity extends Activity implements OnClickListener  {
+
+public class WebViewActivity extends Activity {
 	
 	//Setting up my views/variables
 	private WebView webView;
@@ -39,12 +39,14 @@ public class WebViewActivity extends Activity implements OnClickListener  {
         urlEditText.setText("Http://www.");
         urlEditText.setSelection(urlEditText.getText().length());
         
+        
+        
 		webView = (WebView) findViewById(R.id.webView);
 		//Creating a function to handle override of the webview and load the URL 
 		webView.setWebViewClient(new MyWebViewClient());
 		//Setting the background of the webView
 		webView.setBackgroundColor(Color.parseColor("#77c9ef"));
-		//Accessing the database function
+		
 		db = new DanDataBase(getApplicationContext());
 
 		mViewUrl = (Button) findViewById(R.id.viewurls);
@@ -60,11 +62,6 @@ public class WebViewActivity extends Activity implements OnClickListener  {
 				if (validateUrl(url)) {
 					webView.getSettings().setJavaScriptEnabled(true);
 					webView.loadUrl(url);
-					if (url != null) {
-						db.open();
-						db.insertRecord(url);
-						db.close();
-					}
 				} else {
 					Toast.makeText(WebViewActivity.this,
 							"Please enter a valid URL", Toast.LENGTH_SHORT)
@@ -118,19 +115,5 @@ public class WebViewActivity extends Activity implements OnClickListener  {
         getMenuInflater().inflate(R.menu.activity_web_view, menu);
         return true;
     }
-
-	@Override
-	public void onClick(View v) {
-		switch (v.getId()) {
-		case R.id.viewurls:
-			Intent iViewUrls = new Intent(WebViewActivity.this,
-					UrlsActivity.class);
-			startActivity(iViewUrls);
-			break;
-
-		default:
-			break;
-		}
-	}
     
 }

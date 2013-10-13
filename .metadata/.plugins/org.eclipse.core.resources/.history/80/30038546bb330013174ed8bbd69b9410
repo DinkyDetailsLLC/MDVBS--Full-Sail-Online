@@ -35,8 +35,6 @@
                 <data android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:screenOrientation="portrait" android:name="UrlsActivity"></activity>
-  
     </application>
 
 </manifest>
