@@ -1,8 +1,4 @@
 INDEX VERSION 1.126+/Users/Dannis/Documents/MDVBS- Full Sail Online/.metadata/.plugins/org.eclipse.jdt.core
-2636843916.index
 57374633.index
 1250331694.index
 2704173179.index
-1696021003.index
-1408262053.index
-1664093437.index
