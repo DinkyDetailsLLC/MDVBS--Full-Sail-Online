@@ -34,7 +34,7 @@ int layout actionbar 0x7f030000
 int layout actionbar_item 0x7f030001
 int layout activity_main 0x7f030002
 int layout info_activity 0x7f030003
-int menu main 0x7f080000
+int menu activity_main 0x7f080000
 int string actionbar_activity_not_found 0x7f060002
 int string app_name 0x7f060001
 int string hello 0x7f060000
