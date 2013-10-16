@@ -19,6 +19,7 @@ int drawable ic_menu_home 0x7f020007
 int drawable ic_menu_info_details 0x7f020008
 int drawable ic_menu_refresh 0x7f020009
 int drawable icon 0x7f02000a
+int id actionbar 0x7f09000a
 int id actionbar_actions 0x7f090006
 int id actionbar_home 0x7f090001
 int id actionbar_home_bg 0x7f090003
@@ -28,8 +29,9 @@ int id actionbar_home_logo 0x7f090002
 int id actionbar_item 0x7f090009
 int id actionbar_progress 0x7f090007
 int id actionbar_title 0x7f090008
-int id menu_settings 0x7f09000a
+int id menu_settings 0x7f09000c
 int id screen 0x7f090000
+int id textInfo 0x7f09000b
 int layout actionbar 0x7f030000
 int layout actionbar_item 0x7f030001
 int layout activity_main 0x7f030002
