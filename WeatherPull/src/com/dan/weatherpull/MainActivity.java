@@ -28,7 +28,9 @@ import android.widget.ExpandableListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
+import com.markupartist.android.widget.ActionBar;
+import com.markupartist.android.widget.ActionBar.Action;
+import com.markupartist.android.widget.ActionBar.IntentAction;
 
 public class MainActivity extends Activity implements OnClickListener {
 
@@ -62,6 +64,48 @@ public class MainActivity extends Activity implements OnClickListener {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
 
+		final ActionBar actionBar = (ActionBar) findViewById(R.id.actionbar);
+		actionBar.setHomeAction(new IntentAction(this, createIntent(this),
+				R.drawable.ic_menu_home));
+		actionBar.setTitle("Home Activity");
+		actionBar.addAction(new Action() {
+			@Override
+			public void performAction(View view) {
+				Intent infoIntent = new Intent(MainActivity.this,
+						InfoActivity.class);
+				startActivity(infoIntent);
+			}
+
+			@Override
+			public int getDrawable() {
+				return R.drawable.ic_menu_info_details;
+			}
+		});
+
+		actionBar.addAction(new Action() {
+			@Override
+			public void performAction(View view) {
+				db.delete(WeatherDb.SQLITE_TABLE, null, null);
+				resultTextView.setVisibility(View.VISIBLE);
+				expListView.setVisibility(View.GONE);
+				if (editTextZipCode.getText().toString().length() == 0) {
+					Toast.makeText(MainActivity.this,
+							"Please Enter a Valid Zip Code!", Toast.LENGTH_LONG)
+							.show();
+					return;
+				} else {
+					MainActivity.ZipCode = editTextZipCode.getText().toString()
+							.trim();
+					searchWeather(editTextZipCode.getText().toString().trim(),
+							1);
+				}
+			}
+
+			@Override
+			public int getDrawable() {
+				return R.drawable.ic_menu_refresh;
+			}
+		});
 
 		typeFace = Typeface.createFromAsset(getAssets(), "font/Aller.ttf");
 		mMainHeading = (TextView) findViewById(R.id.textheading);
