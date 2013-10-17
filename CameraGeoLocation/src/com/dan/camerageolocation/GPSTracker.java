@@ -33,7 +33,8 @@ public class GPSTracker extends Service implements LocationListener {
 		this.mContext = context;
 		getLocation();
 	}
-	// Found a good tutorial on the internet to handle the GPS. Pretty self explanatory reading the code
+
+	// Found a good tutorial on the Internet to handle the GPS. Pretty self explanatory reading the code
 	public Location getLocation() {
 		try {
 			locationManager = (LocationManager) mContext
