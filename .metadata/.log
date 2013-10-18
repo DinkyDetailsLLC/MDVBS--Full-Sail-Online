@@ -5650,3 +5650,266 @@ Binding(CTRL+SHIFT+ARROW_RIGHT,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.jdt.ui.javaEditorScope,,cocoa,system)
+!SESSION 2013-10-17 21:08:55.840 -----------------------------------------------
+eclipse.buildId=4.3.0.I20130605-2000
+java.version=1.7.0_04-ea
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -keyring /Users/Dannis/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -data /Users/Dannis/Documents/MDVBS- Full Sail Online -product org.eclipse.epp.package.standard.product -keyring /Users/Dannis/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-10-17 21:09:00.222
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.ui 2 0 2013-10-17 21:09:04.023
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.056
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.056
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.093
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.094
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.096
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.097
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.097
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.097
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.097
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.098
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.098
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.098
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.098
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.098
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.099
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.099
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.099
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.099
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.100
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.100
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.100
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.100
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.101
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.101
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.101
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.101
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.101
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.102
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.102
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.102
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-10-17 21:12:09.102
+!MESSAGE Current file is not a match for the given config.
+
+!ENTRY org.eclipse.egit.ui 4 0 2013-10-17 21:41:49.747
+!MESSAGE https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+!STACK 1
+org.eclipse.core.runtime.CoreException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI.execute(FetchOperationUI.java:102)
+	at org.eclipse.egit.ui.internal.synchronize.SynchronizeFetchJob.run(SynchronizeFetchJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.jgit.api.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:137)
+	at org.eclipse.egit.core.op.FetchOperation.run(FetchOperation.java:127)
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI.execute(FetchOperationUI.java:99)
+	... 2 more
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:479)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:308)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:136)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:122)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1105)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:128)
+	... 4 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2013-10-17 21:41:49.749
+!MESSAGE https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:137)
+	at org.eclipse.egit.core.op.FetchOperation.run(FetchOperation.java:127)
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI.execute(FetchOperationUI.java:99)
+	at org.eclipse.egit.ui.internal.synchronize.SynchronizeFetchJob.run(SynchronizeFetchJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:479)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:308)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:136)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:122)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1105)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:128)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2013-10-17 21:42:39.885
+!MESSAGE https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+!STACK 1
+org.eclipse.core.runtime.CoreException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI.execute(FetchOperationUI.java:102)
+	at org.eclipse.egit.ui.internal.synchronize.SynchronizeFetchJob.run(SynchronizeFetchJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.jgit.api.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:137)
+	at org.eclipse.egit.core.op.FetchOperation.run(FetchOperation.java:127)
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI.execute(FetchOperationUI.java:99)
+	... 2 more
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:479)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:308)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:136)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:122)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1105)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:128)
+	... 4 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2013-10-17 21:42:39.885
+!MESSAGE https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:137)
+	at org.eclipse.egit.core.op.FetchOperation.run(FetchOperation.java:127)
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI.execute(FetchOperationUI.java:99)
+	at org.eclipse.egit.ui.internal.synchronize.SynchronizeFetchJob.run(SynchronizeFetchJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:479)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:308)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:136)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:122)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1105)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:128)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2013-10-17 21:45:07.926
+!MESSAGE https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+!STACK 1
+org.eclipse.core.runtime.CoreException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI.execute(FetchOperationUI.java:102)
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI$1.run(FetchOperationUI.java:117)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.jgit.api.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:137)
+	at org.eclipse.egit.core.op.FetchOperation.run(FetchOperation.java:127)
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI.execute(FetchOperationUI.java:99)
+	... 2 more
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:479)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:308)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:136)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:122)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1105)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:128)
+	... 4 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2013-10-17 21:45:07.927
+!MESSAGE https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:137)
+	at org.eclipse.egit.core.op.FetchOperation.run(FetchOperation.java:127)
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI.execute(FetchOperationUI.java:99)
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI$1.run(FetchOperationUI.java:117)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:479)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:308)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:136)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:122)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1105)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:128)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2013-10-17 21:45:07.927
+!MESSAGE https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+!STACK 1
+org.eclipse.core.runtime.CoreException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI.execute(FetchOperationUI.java:102)
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI$1.run(FetchOperationUI.java:117)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.jgit.api.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:137)
+	at org.eclipse.egit.core.op.FetchOperation.run(FetchOperation.java:127)
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI.execute(FetchOperationUI.java:99)
+	... 2 more
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:479)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:308)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:136)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:122)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1105)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:128)
+	... 4 more
+!SUBENTRY 1 org.eclipse.egit.ui 4 0 2013-10-17 21:45:07.927
+!MESSAGE https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:137)
+	at org.eclipse.egit.core.op.FetchOperation.run(FetchOperation.java:127)
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI.execute(FetchOperationUI.java:99)
+	at org.eclipse.egit.ui.internal.fetch.FetchOperationUI$1.run(FetchOperationUI.java:117)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/DinkyDetailsLLC/MDVBS--Full-Sail-Online.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:479)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:308)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:136)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:122)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1105)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:128)
+	... 4 more
