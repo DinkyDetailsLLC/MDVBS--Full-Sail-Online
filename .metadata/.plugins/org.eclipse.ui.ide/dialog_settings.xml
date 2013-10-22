@@ -8,11 +8,18 @@
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
-			<item value="/Users/Dannis/Downloads/WeatherPull-9.zip"/>
-			<item value="/Users/Dannis/Downloads/WeatherPull 12.zip"/>
 			<item value="/Users/Dannis/Downloads/WeatherPull_Bare.zip"/>
+			<item value="/Users/Dannis/Downloads/WeatherPull 12.zip"/>
+			<item value="/Users/Dannis/Downloads/WeatherPull-9.zip"/>
 			<item value="/Users/Dannis/Downloads/WeatherPull-8.zip"/>
 			<item value="/Users/Dannis/Downloads/actionbar.zip"/>
 		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item value="484" key="DIALOG_WIDTH"/>
+		<item value="223" key="DIALOG_Y_ORIGIN"/>
+		<item value="354" key="DIALOG_HEIGHT"/>
+		<item value="274" key="DIALOG_X_ORIGIN"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
 	</section>
 </section>
