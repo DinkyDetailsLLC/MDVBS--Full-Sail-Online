@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Iron Man Fan</string>
+    <string name="app_name">Iron Man Fan App</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+     <string name="title_activity_main">Iron Man Fan App</string>
+    <string name="checkbatt">Check Battery</string>
+    <string name="header">Iron Man Fan App</string>
+    <string name="save">Save</string>
+    <string name="playvideo">Play Video</string>
+    <string name="savevideo">Take (Save) Video</string>
+    <string name="video_prompt">Choose a Video</string>
+
+    <string-array name="video_arrays">
+        <item>Iron Man 1</item>
+        <item>Iron Man 2</item>
+        <item>Iron Man 3</item>
+    </string-array>
+    
 
 </resources>
