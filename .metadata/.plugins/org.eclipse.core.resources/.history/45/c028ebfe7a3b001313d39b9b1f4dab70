@@ -70,7 +70,7 @@ public class MainActivity extends Activity implements OnClickListener
 		mSaveVideo.setOnClickListener(this);
 		mCheckBattery.setOnClickListener(this);
 		videoSpinner = (Spinner) findViewById(R.id.spinner1);
-	//	videoSpinner.setOnItemSelectedListener(this);
+		videoSpinner.setOnItemSelectedListener(this);
 		mBatteryInfo = (TextView) findViewById(R.id.batteryinfo);
 		
 	}

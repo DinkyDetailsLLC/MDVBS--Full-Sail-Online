@@ -24,8 +24,8 @@ import android.widget.VideoView;
 import android.os.BatteryManager;
 
 //Implementing the OnClick and the OnItem for Buttons and Spinners
-public class MainActivity extends Activity implements OnClickListener
-{
+public class MainActivity extends Activity implements OnClickListener,
+OnItemSelectedListener{
 
 	//Setting up variables
 	private Button mPlayVideo;
@@ -70,7 +70,7 @@ public class MainActivity extends Activity implements OnClickListener
 		mSaveVideo.setOnClickListener(this);
 		mCheckBattery.setOnClickListener(this);
 		videoSpinner = (Spinner) findViewById(R.id.spinner1);
-	//	videoSpinner.setOnItemSelectedListener(this);
+		videoSpinner.setOnItemSelectedListener(this);
 		mBatteryInfo = (TextView) findViewById(R.id.batteryinfo);
 		
 	}
