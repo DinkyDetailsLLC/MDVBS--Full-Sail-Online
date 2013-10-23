@@ -44,7 +44,6 @@ OnItemSelectedListener{
 		//Setting the main Activity
 		setContentView(R.layout.activity_main);
 		
-		
 		//Linking the items in XML to a variable
 		videoview = (VideoView) findViewById(R.id.VideoView);
 
