@@ -178,7 +178,7 @@ OnItemSelectedListener {
 				//Save the file to external Directory.
 				OutputStream output = new FileOutputStream(Environment
 						.getExternalStorageDirectory().getPath().toString()
-						+ "/IronManFanVideo.mp4");
+						+ "/takeaway.mp4");
 				//writing the data to the space
 				byte data[] = new byte[1024];
 				long total = 0;
