@@ -26,7 +26,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -35,9 +34,9 @@ import android.widget.VideoView;
 import android.os.BatteryManager;
 
 //Implementing the OnClick and the OnItem for Buttons and Spinners
-public class MainActivity extends Activity implements OnClickListener,
-OnItemSelectedListener {
-	
+public class MainActivity extends Activity implements OnClickListener
+{
+
 	//Setting up variables
 	private Button mPlayVideo;
 	private Button mSaveVideo;
@@ -98,7 +97,6 @@ OnItemSelectedListener {
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.playvideo:
-			
 		
 			break;
 			//If the Save Video is pressed... Run the Download Function
@@ -162,30 +160,6 @@ OnItemSelectedListener {
 			return null;
 		}
 	
-		
-		//Setting up the options for my Spinner
-		@Override
-		public void onItemSelected(AdapterView<?> parent, View view, int pos,
-				long id) {
-			position = parent.getItemAtPosition(pos).toString();
-			if (position.equalsIgnoreCase("Iron Man 1")) {
-				//URL of hosted Video 1
-				videoUrl = "http://pocketparties.mobi/assets/IronMan_1.mp4";
-			} else if (position.equalsIgnoreCase("Iron Man 2")){
-				//URL of hosted Video 2
-				videoUrl = "http://pocketparties.mobi/assets/IronMan_2.mp4";
-			} else if (position.equalsIgnoreCase("Iron Man 3")){
-				//URL of hosted Video 3
-				videoUrl = "http://pocketparties.mobi/assets/IronMan_3.mp4";
-			}
-		}
-
-		@Override
-		public void onNothingSelected(AdapterView<?> arg0) {
-
-		}
-		
-		
 		
 	
 	};

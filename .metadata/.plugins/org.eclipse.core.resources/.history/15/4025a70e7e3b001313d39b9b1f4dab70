@@ -98,7 +98,6 @@ OnItemSelectedListener {
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.playvideo:
-			
 		
 			break;
 			//If the Save Video is pressed... Run the Download Function
