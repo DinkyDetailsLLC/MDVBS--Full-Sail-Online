@@ -9,7 +9,7 @@
     <string name="header">Iron Man Fan App</string>
     <string name="save">Save</string>
     <string name="playvideo">Play Video</string>
-    <string name="savevideo">Save Video</string>
+    <string name="savevideo">Take (Save) Video</string>
     <string name="video_prompt">Choose a Video</string>
 
     <string-array name="video_arrays">
