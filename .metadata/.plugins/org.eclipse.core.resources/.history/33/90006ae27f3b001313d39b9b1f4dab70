@@ -68,7 +68,7 @@ OnItemSelectedListener {
 		//Setting the main Activity
 		setContentView(R.layout.activity_main);
 		
-		//Setting up the receiver intent to get the batter information
+		//Setting up the reciever intent to get the batter information
 		this.registerReceiver(this.batteryInfoReceiver, new IntentFilter(
 				Intent.ACTION_BATTERY_CHANGED));
 		
@@ -85,7 +85,7 @@ OnItemSelectedListener {
 		mSaveVideo.setOnClickListener(this);
 		mCheckBattery.setOnClickListener(this);
 		videoSpinner = (Spinner) findViewById(R.id.spinner1);
-		videoSpinner.setOnItemSelectedListener(this);
+	//	videoSpinner.setOnItemSelectedListener(this);
 		mBatteryInfo = (TextView) findViewById(R.id.batteryinfo);
 		
 	}

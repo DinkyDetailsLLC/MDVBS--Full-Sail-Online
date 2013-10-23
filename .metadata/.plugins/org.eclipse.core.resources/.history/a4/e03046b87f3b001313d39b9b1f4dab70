@@ -11,9 +11,6 @@ import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
 
-import android.media.MediaPlayer;
-import android.media.MediaPlayer.OnPreparedListener;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
@@ -32,7 +29,6 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.Button;
-import android.widget.MediaController;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -68,7 +64,7 @@ OnItemSelectedListener {
 		//Setting the main Activity
 		setContentView(R.layout.activity_main);
 		
-		//Setting up the receiver intent to get the batter information
+		//Setting up the reciever intent to get the batter information
 		this.registerReceiver(this.batteryInfoReceiver, new IntentFilter(
 				Intent.ACTION_BATTERY_CHANGED));
 		
@@ -85,7 +81,7 @@ OnItemSelectedListener {
 		mSaveVideo.setOnClickListener(this);
 		mCheckBattery.setOnClickListener(this);
 		videoSpinner = (Spinner) findViewById(R.id.spinner1);
-		videoSpinner.setOnItemSelectedListener(this);
+	//	videoSpinner.setOnItemSelectedListener(this);
 		mBatteryInfo = (TextView) findViewById(R.id.batteryinfo);
 		
 	}
@@ -102,38 +98,8 @@ OnItemSelectedListener {
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.playvideo:
-			//Setup my dialog for when the video has started to pull
-			pVideoDialog.setTitle("Streaming Video");
-			pVideoDialog.setMessage("Buffering...");
-			pVideoDialog.setIndeterminate(false);
-			pVideoDialog.setCancelable(true);
-			pVideoDialog.show();
 			
-			try {
-			//Setting up the MediaController to handle the video
-			MediaController mediacontroller = new MediaController(
-					MainActivity.this);
-			//Put the controller into my view and grab the VideoURL to play
-			mediacontroller.setAnchorView(videoview);
-			Uri video = Uri.parse(videoUrl);
-			videoview.setMediaController(mediacontroller);
-			videoview.setVideoURI(video);
-			
-			//What happens if there is an error
-			} catch (Exception e) {
-				Log.e("Error", e.getMessage());
-				e.printStackTrace();
-			}
-			//Assuming all goes well.. prepare the videoview with the listener and start to play
-			videoview.requestFocus();
-			videoview.setOnPreparedListener(new OnPreparedListener() {
-				public void onPrepared(MediaPlayer mp) {
-					pVideoDialog.dismiss();
-					//Automatically strart playing
-					videoview.start();
-				}
-			});
-			
+		
 			break;
 			//If the Save Video is pressed... Run the Download Function
 		case R.id.savevideo:
@@ -213,7 +179,7 @@ OnItemSelectedListener {
 				videoUrl = "http://pocketparties.mobi/assets/IronMan_3.mp4";
 			}
 		}
-		//setup for my spinner if nothing is selected. Prereq*
+
 		@Override
 		public void onNothingSelected(AdapterView<?> arg0) {
 
