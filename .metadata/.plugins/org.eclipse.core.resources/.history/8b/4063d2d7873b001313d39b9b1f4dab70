@@ -165,7 +165,7 @@ OnItemSelectedListener {
 		}
 		//Implementation to run and open up a stream to actually download the data
 		@Override
-		protected String doInBackground(String... videoUrl) {
+		protected String doInBackground(String... videoURL) {
 			int count;
 			try {
 				//Open a Connection and a buffer stream to prepare for storage

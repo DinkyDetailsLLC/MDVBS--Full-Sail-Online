@@ -11,23 +11,20 @@ import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
 
+import android.media.MediaPlayer;
+import android.media.MediaPlayer.OnPreparedListener;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.os.Environment;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.graphics.Typeface;
-import android.media.MediaPlayer;
-import android.media.MediaPlayer.OnPreparedListener;
-import android.net.Uri;
-import android.os.AsyncTask;
-import android.os.BatteryManager;
-import android.os.Bundle;
-import android.os.Environment;
-import android.provider.Settings;
 import android.util.Log;
-import android.view.KeyEvent;
+import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -39,6 +36,7 @@ import android.widget.MediaController;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.VideoView;
+import android.os.BatteryManager;
 
 //Implementing the OnClick and the OnItem for Buttons and Spinners
 public class MainActivity extends Activity implements OnClickListener,
@@ -63,12 +61,10 @@ OnItemSelectedListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
 		//Tell the system not to have a title and keep it @ Full Screen. 
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		
 		//Setting the main Activity
 		setContentView(R.layout.activity_main);
 		
@@ -165,7 +161,7 @@ OnItemSelectedListener {
 		}
 		//Implementation to run and open up a stream to actually download the data
 		@Override
-		protected String doInBackground(String... videoUrl) {
+		protected String doInBackground(String... videoURL) {
 			int count;
 			try {
 				//Open a Connection and a buffer stream to prepare for storage
@@ -204,7 +200,6 @@ OnItemSelectedListener {
 			pDialog.setProgress(Integer.parseInt(progress[0]));
 		}
 		
-		//Dismiss the dialog once file is posted
 		@Override
 		protected void onPostExecute(String file_url) {
 			pDialog.dismiss();
@@ -228,36 +223,24 @@ OnItemSelectedListener {
 				videoUrl = "http://pocketparties.mobi/assets/IronMan_3.mp4";
 			}
 		}
-		
-		//setup for my spinner if nothing is selected. Pre req*
+		//setup for my spinner if nothing is selected. Prereq*
 		@Override
 		public void onNothingSelected(AdapterView<?> arg0) {
 
 		}
 		
-		/* (non-Javadoc)
-		 * @see android.app.Activity#dispatchKeyEvent(android.view.KeyEvent)
-		 */
-		@Override
-		//Records the key events
-		public boolean dispatchKeyEvent(KeyEvent event) {
-			return super.dispatchKeyEvent(event);
-		}		
 		
-		//Use the "Back button to handle dismissing if a video is too long
-		@Override
-		public void onBackPressed() {
-			super.onBackPressed();
-			if (pVideoDialog.isShowing()) {
-				pVideoDialog.cancel();
-				pVideoDialog.dismiss();
-			} else if (pDialog.isShowing()) {
-				pDialog.cancel();
-				pDialog.dismiss();
-			} else {
-				MainActivity.this.finish();
-			}
-		}
+		
+	
+	};
+	
+	
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
 }
-	
-	

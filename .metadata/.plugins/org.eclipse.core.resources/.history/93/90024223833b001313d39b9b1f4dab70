@@ -63,12 +63,10 @@ OnItemSelectedListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
 		//Tell the system not to have a title and keep it @ Full Screen. 
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		
 		//Setting the main Activity
 		setContentView(R.layout.activity_main);
 		
@@ -165,7 +163,7 @@ OnItemSelectedListener {
 		}
 		//Implementation to run and open up a stream to actually download the data
 		@Override
-		protected String doInBackground(String... videoUrl) {
+		protected String doInBackground(String... videoURL) {
 			int count;
 			try {
 				//Open a Connection and a buffer stream to prepare for storage
@@ -228,36 +226,24 @@ OnItemSelectedListener {
 				videoUrl = "http://pocketparties.mobi/assets/IronMan_3.mp4";
 			}
 		}
-		
-		//setup for my spinner if nothing is selected. Pre req*
+		//setup for my spinner if nothing is selected. Prereq*
 		@Override
 		public void onNothingSelected(AdapterView<?> arg0) {
 
 		}
 		
-		/* (non-Javadoc)
-		 * @see android.app.Activity#dispatchKeyEvent(android.view.KeyEvent)
-		 */
-		@Override
-		//Records the key events
-		public boolean dispatchKeyEvent(KeyEvent event) {
-			return super.dispatchKeyEvent(event);
-		}		
 		
-		//Use the "Back button to handle dismissing if a video is too long
-		@Override
-		public void onBackPressed() {
-			super.onBackPressed();
-			if (pVideoDialog.isShowing()) {
-				pVideoDialog.cancel();
-				pVideoDialog.dismiss();
-			} else if (pDialog.isShowing()) {
-				pDialog.cancel();
-				pDialog.dismiss();
-			} else {
-				MainActivity.this.finish();
-			}
-		}
+		
+	
+	};
+	
+	
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
 }
-	
-	
