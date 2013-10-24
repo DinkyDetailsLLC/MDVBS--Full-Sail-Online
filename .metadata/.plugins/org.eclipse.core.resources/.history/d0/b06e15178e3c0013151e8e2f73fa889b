@@ -7,7 +7,6 @@ package com.dinky.weatherpullhd;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
-import android.webkit.WebView;
 
 public class SplashActivity extends Activity {
 	
@@ -16,12 +15,6 @@ public class SplashActivity extends Activity {
 	   @Override
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
-	        //preparing for a webview
-	        WebView wb = new WebView(this);
-	        //Load the Webview
-	        wb.loadUrl("file:///android_asset/demo.html");
-	        //Set the webview
-	        setContentView(wb);
 
 	   }
 	   

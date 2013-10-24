@@ -41,6 +41,5 @@ public class MainActivity extends Activity {
         JavaScriptInterface(Context c) {
             mContext = c;
         }
-	}
-}
 
+}
