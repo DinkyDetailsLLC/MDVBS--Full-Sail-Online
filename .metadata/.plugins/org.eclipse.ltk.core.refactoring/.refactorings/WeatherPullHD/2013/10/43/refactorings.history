@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;WeatherPullHD/res/layout/activity_main.xml&apos; to &apos;activity_splash.xml&apos;" description="Rename resource &apos;activity_main.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/activity_main.xml" name="activity_splash.xml" stamp="1382605566217" updateReferences="true"/>
+</session>
