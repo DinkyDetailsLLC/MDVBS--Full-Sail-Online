@@ -10,6 +10,8 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 
 public class MainActivity extends Activity {
 	// Setting up known variables
@@ -39,4 +41,5 @@ public class MainActivity extends Activity {
         JavaScriptInterface(Context c) {
             mContext = c;
         }
+
 }

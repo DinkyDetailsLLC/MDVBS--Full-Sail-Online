@@ -1,0 +1,66 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dan.weatherpull"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="InfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="WeatherService"
+            android:enabled="true" >
+        </service>
+
+        <provider
+            android:name="myContentProvider"
+            android:authorities="com.dinkydetails.weatherpull.myContentProvider"
+            android:exported="true" >
+        </provider>
+
+        <activity
+            android:name="SecondActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="unspecified" >
+        </activity> 
+        
+        <receiver
+            android:name="WidgetProvider"
+            android:icon="@drawable/ic_launcher"
+            android:label="Dan Weather Widget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <service android:name="UpdateWidgetService" >
+        </service>
+    </application>
+</manifest>
