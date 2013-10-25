@@ -46,7 +46,7 @@ public class MainActivity extends Activity {
         {
         	//Call the WeatherApp and store the intent to pass it onto the app. 
         	PackageManager pm = getPackageManager();
-             Intent intent = pm.getLaunchIntentForPackage("com.dan.weatherpull");
+             Intent intent = pm.getLaunchIntentForPackage("com.dinky.weatherpull");
              intent.putExtra("zip", zip);
              startActivity(intent);
         }

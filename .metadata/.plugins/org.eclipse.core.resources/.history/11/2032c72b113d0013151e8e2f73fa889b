@@ -13,8 +13,8 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".SplashActivity"
-            android:label="@string/title_activity_splash" >
+            android:name=".SpalshActivity"
+            android:label="@string/title_activity_spalsh" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

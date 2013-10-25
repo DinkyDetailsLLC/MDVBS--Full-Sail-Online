@@ -10,7 +10,6 @@
             color: 343741;
             font-family: Verdana;
             background-color: #EF523F;
-            background-image:url("/images/background1.png");
         }
          
         .style1
