@@ -10,12 +10,12 @@
             font-size: 14pt;
             color: 343741;
             font-family: Verdana;
-            background-image:url('images/background2.png');
+            background-color: #EF523F;
         }
          
         .style1
         {
-            color: #000000;
+            color: #FFFFFF;
             font-weight: bold;
         }
 </style>

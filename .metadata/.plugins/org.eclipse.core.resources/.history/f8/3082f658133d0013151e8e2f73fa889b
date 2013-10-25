@@ -7,7 +7,7 @@
         {
             padding: 2px;
             font-size: 14pt;
-            color: black;
+            color: 343741;
             font-family: Verdana;
             background-image:url('images/background1.png');
         }
@@ -17,17 +17,22 @@
             color: #FFFFFF;
             font-weight: bold;
         }
-        h3
+        .h3
         {
-        color: #white;
+        color: #000000;
         }
     </style>
 </head>
 <body>
 
-    <div class="Help" id="Help" style="Z-INDEX: 1000; LEFT: 5%; OVERFLOW: visible; WIDTH: 90%; POSITION: absolute; TOP: 10px; HEIGHT: 300px">
-        <h3 style="text-align:center;">Welcome to WeatherPull HD</h3>
-
+    <div class="Help" id="Help" style="Z-INDEX: 1000; LEFT: 5%; OVERFLOW: visible; WIDTH: 90%; POSITION: absolute; TOP: 100px; HEIGHT: 300px">
+        <h3 style="text-align:center;color:#000000">HTML Splash Screen</h3>
+        <p style="text-align:center;">
+            This is a basic splash screen designed in HTML
+        </p>
+<p style="text-align:center;">
+This is 4th Week Project.
+</p>
 <p style="text-align:right;">
 : Dan Annis
 </p>

@@ -7,7 +7,7 @@
         {
             padding: 2px;
             font-size: 14pt;
-            color: black;
+            color: white;
             font-family: Verdana;
             background-image:url('images/background1.png');
         }
