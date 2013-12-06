@@ -31,11 +31,9 @@
                  
 	             <category android:name="android.intent.category.DEFAULT" />
 	             <category android:name="android.intent.category.BROWSABLE" />
-	           	 
-	           	 <!--  REQUIRED TO GET THE URI OF "TEL" - APP WOULD NOT LAUNCH WITHOUT THIS CODE --> 
-	           	 <!--  TOOK ME SOME RESEARCHING TO FIGURE THIS ONE OUT -->
+	           	<!--  REQUIRED TO GET THE URI OF "TEL" - APP WOULD NOT LAUNCH WITHOUT THIS CODE --> 
 	             <data android:scheme="tel" />
-	            
+	             <!--  TOOK ME SOME RESEARCHING TO FIGURE THIS ONE OUT -->
        		  </intent-filter>        
   
     	<!-- Open the Main App -->         
