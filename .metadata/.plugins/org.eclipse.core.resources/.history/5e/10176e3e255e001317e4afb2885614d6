@@ -31,11 +31,9 @@ public class MainActivity extends Activity {
 		
 		if(strReceivedPhNo != null)
 		{
-			//Log the text to verify its contents
+		
 			Log.v("","strReceivedPhNo: "+strReceivedPhNo);
-			//Since Web is usually formated "Tel: XXXX" need to break up the string to only grab the numbers
 			String parts [] = strReceivedPhNo.split(":");
-			//Decode the left over string to make sure it is only text and nothing left. 
 			String strphNo = URLDecoder.decode(parts[1]);
 			
 			//log the number that was received

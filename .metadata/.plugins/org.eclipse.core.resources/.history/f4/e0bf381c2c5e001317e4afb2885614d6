@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#4863A0"
     
     >
 
@@ -12,7 +11,7 @@
     	android:layout_height="wrap_content"
     	android:padding="10dp"
     	android:layout_marginTop="30dp"
-    	android:background="#5E7D7E"
+    	android:background="res/drawable/pink.jpg"
     	>
 			<!--  Text Box for date to be entered in. -->
 	        <TextView 
