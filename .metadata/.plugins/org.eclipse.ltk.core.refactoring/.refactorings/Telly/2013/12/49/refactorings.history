@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Telly/res/layout/keyboard_layout.xml&apos; to &apos;keypad_layout.xml&apos;" description="Rename resource &apos;keyboard_layout.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/keyboard_layout.xml" name="keypad_layout.xml" stamp="1386291666109" updateReferences="true"/>
+</session>

@@ -1,0 +1,35 @@
+ <!--  This is a file that creates buttons with color, backgrounds, and rounded corners -->
+ <!-- Individual buttons for each button -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item > 
+		<shape android:shape="rectangle">
+	    			
+		    <padding android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp"/>
+		    		
+		   <solid android:color="@color/black"/>
+           <corners
+                android:radius="3dp" />		 	
+		</shape>
+	</item>  
+	
+	
+	<item>
+		<shape android:shape="rectangle" >
+		    				
+		    <solid android:color="@color/white"></solid>
+		    	   			 
+		    <padding android:left="4dp"
+                android:top="4dp"
+                android:right="4dp"
+                android:bottom="4dp"/>
+		    
+		    <corners
+                android:radius="3dp" /> 
+		</shape>
+    </item>
+</layer-list>

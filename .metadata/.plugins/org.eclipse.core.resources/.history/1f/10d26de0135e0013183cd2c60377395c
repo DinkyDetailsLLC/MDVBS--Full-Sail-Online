@@ -31,7 +31,7 @@
                   android:id="@+id/btnDelete"
                   android:layout_width="50dp"
 		          android:layout_height="wrap_content"
-		          android:text="C"
+		          android:text="<"
 		          android:textColor="@color/black"
 		          android:gravity="center"
 		          android:layout_alignParentRight="true"
