@@ -6,8 +6,8 @@
     <LinearLayout 
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:orientation="vertical"
-       android:layout_marginTop="5px">
+       android:orientation="vertical" 
+       android:margin_bottom="4px">
             
       <!-- First Row Layout for Number Pad -->
       

@@ -11,7 +11,7 @@
     	android:padding="10dp"
     	android:layout_marginTop="30dp"
     	>
-			<!--  Text Box for date to be entered in. -->
+			
 	        <TextView 
 	            android:id="@+id/tvNumber"
 			    android:layout_width="match_parent"
@@ -26,7 +26,7 @@
 			    android:layout_marginRight="10dp"
 			    
 			    />
-        <!--  button to clear the text that is in the edit box -->
+        
             <Button 
                   android:id="@+id/btnDelete"
                   android:layout_width="50dp"
@@ -41,7 +41,7 @@
             </Button> 
 		    
     </RelativeLayout>
-    <!--  Add in the keypad layout to display the keys -->
+    
       <include 
         android:id="@+id/llbottom"
         layout="@layout/keypad_layout"

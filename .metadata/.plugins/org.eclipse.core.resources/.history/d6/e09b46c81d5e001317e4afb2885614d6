@@ -6,8 +6,7 @@
     <LinearLayout 
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:orientation="vertical"
-       android:layout_marginTop="5px">
+       android:orientation="vertical"> 
             
       <!-- First Row Layout for Number Pad -->
       
@@ -116,120 +115,7 @@
 		          android:textColor="@color/black"/> 
               
           </LinearLayout>
-      </LinearLayout>
-      
-      <!-- Third Row Layout for Number Pad -->
-      
-      <LinearLayout 
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="horizontal"
-       android:weightSum="3"
-       >
-       
-          <LinearLayout 
-		       android:layout_width="match_parent"
-		       android:layout_height="wrap_content"
-		       android:layout_weight="1"
-		       android:orientation="horizontal"
-		       >
-              
-              <Button 
-                  android:id="@+id/btnSeven"
-                  android:layout_width="match_parent"
-		          android:layout_height="match_parent"
-		          android:text="7"
-		          android:textColor="@color/black"/>              
-          </LinearLayout>
           
-          <LinearLayout 
-		       android:layout_width="match_parent"
-		       android:layout_height="wrap_content"
-		       android:layout_weight="1"
-		       android:orientation="horizontal"
-		       >
-              <Button 
-                  android:id="@+id/btnEight"
-                  android:layout_width="match_parent"
-		          android:layout_height="match_parent"
-		          android:text="8"
-		          android:textColor="@color/black"/> 
-              
-          </LinearLayout>
-          
-          <LinearLayout 
-		       android:layout_width="match_parent"
-		       android:layout_height="wrap_content"
-		       android:layout_weight="1"
-		       android:orientation="horizontal"
-		       >
-              <Button 
-                  android:id="@+id/btnNine"
-                  android:layout_width="match_parent"
-		          android:layout_height="match_parent"
-		          android:text="9"
-		          android:textColor="@color/black"/> 
-              
-          </LinearLayout>
-          
-          
-      </LinearLayout>
-      
-	<!-- Forth Row Layout for Number Pad -->
-      
-      <LinearLayout 
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:orientation="horizontal"
-       android:weightSum="3"
-       >
-       
-          <LinearLayout 
-		       android:layout_width="match_parent"
-		       android:layout_height="wrap_content"
-		       android:layout_weight="1"
-		       android:orientation="horizontal"
-		       >
-              
-              <Button 
-                  android:id="@+id/btnClear"
-                  android:layout_width="match_parent"
-		          android:layout_height="match_parent"
-		          android:text="Clear"
-		          android:textColor="@color/black"
-		          android:visibility="visible"/>              
-          </LinearLayout>
-          
-          <LinearLayout 
-		       android:layout_width="match_parent"
-		       android:layout_height="wrap_content"
-		       android:layout_weight="1"
-		       android:orientation="horizontal"
-		       >
-              <Button 
-                  android:id="@+id/btnZero"
-                  android:layout_width="match_parent"
-		          android:layout_height="match_parent"
-		          android:text="0"
-		          android:textColor="@color/black"/> 
-              
-          </LinearLayout>
-          
-          <LinearLayout 
-		       android:layout_width="match_parent"
-		       android:layout_height="wrap_content"
-		       android:layout_weight="1"
-		       android:orientation="horizontal"
-		       >
-              <Button 
-                  android:id="@+id/btnCall"
-                  android:layout_width="match_parent"
-		          android:layout_height="match_parent"
-		          android:text="Call"
-		          android:textColor="@color/black"
-		          android:visibility="visible"/> 
-              
-          </LinearLayout>
       </LinearLayout>
       
       
