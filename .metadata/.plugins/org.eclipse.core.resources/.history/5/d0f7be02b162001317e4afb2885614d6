@@ -5,6 +5,5 @@
     <color name="white">#ffffff</color>
      <color name="btn_bg_color">#8058d877</color>
     <color name="red">#FF0000</color>
-     <color name="grey_contact_text">#848284</color>
-    <color name="green">#25cd0e</color> 
+
 </resources>

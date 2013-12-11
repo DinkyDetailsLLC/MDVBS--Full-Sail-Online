@@ -8,7 +8,7 @@
        android:layout_height="wrap_content"
        android:orientation="vertical"
        android:layout_marginTop="5px"
-       android:background="@color/white">
+       android:background="@color/grey_contact_text">
             
       <!-- First Row Layout for Number Pad -->
       
