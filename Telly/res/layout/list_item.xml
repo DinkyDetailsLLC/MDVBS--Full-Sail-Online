@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#806c6c6c"
+    >
+    <!--  XML for the actual List item -->
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="70dp"
+	    >
+     <!--  Image Placeholder -->
+	    <ImageView 
+	        android:id="@+id/ivContactPic"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:src="@drawable/ic_launcher"
+	        android:layout_centerVertical="true"
+	        android:layout_margin="5dp"
+	        android:layout_alignParentLeft="true"
+	        android:scaleType="fitXY"/>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_centerVertical="true"
+	        android:layout_toRightOf="@+id/ivContactPic"
+	        android:layout_marginRight="5dp">
+	    <!--  FN Placeholder -->
+	    <TextView 
+	        android:id="@+id/tvContactFirstName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        
+	        android:layout_toLeftOf="@+id/rlButton"
+	        android:text="Application name"
+	        android:textSize="16sp"
+	        android:padding="5dp"
+	       
+	        android:textColor="@color/white"
+	        
+	        />
+	       <!--  LN Placeholder -->
+	    <TextView 
+	        android:id="@+id/tvContactPhNo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/ivContactPic"
+	        android:layout_below="@+id/tvContactFirstName"
+	        android:text="Phone number"
+	        android:textSize="16sp"
+	        android:layout_centerVertical="true"
+	        android:padding="5dp"
+	        android:textColor="@color/white"
+	        
+	        />
+	    
+	    </LinearLayout>
+	       <!--  Add a Call Button/Image -->
+	    <ImageView 
+	        android:id="@+id/ivCall"
+	        android:layout_width="60dp"
+	        android:layout_height="35dp"
+	        android:src="@drawable/call"
+	        android:layout_centerVertical="true"
+	        android:layout_margin="5dp"
+	        android:layout_alignParentRight="true"
+	        android:scaleType="fitXY"/>
+	    
+	 
+    
+   </RelativeLayout>
+    <!--  Pretty Pixel Line  -->
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="@color/white"
+	    >
+        
+    </LinearLayout> 
+
+</LinearLayout>

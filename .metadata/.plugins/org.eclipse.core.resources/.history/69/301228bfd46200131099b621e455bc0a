@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dinkydetails.telly"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+<!-- ADD PERMISSIONS FOR PHONE ACCESS -->
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    
+   
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="Utils.MainActivity"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboardHidden">
+            
+    <intent-filter >
+                 <!-- REGISTER THE APP TO DIAL -->
+	             <action android:name="android.intent.action.DIAL" />
+	             <action android:name="android.intent.action.CALL_PRIVILEGED" />
+                 
+		         <!-- REGISTER FOR "tel" URL BROWSER-->
+                 <action android:name="android.intent.action.VIEW" />
+                 
+                 
+	             <category android:name="android.intent.category.DEFAULT" />
+	             <category android:name="android.intent.category.BROWSABLE" />
+	           	 
+	           	 <!--  REQUIRED TO GET THE URI OF "TEL" - APP WOULD NOT LAUNCH WITHOUT THIS CODE --> 
+	           	 <!--  TOOK ME SOME RESEARCHING TO FIGURE THIS ONE OUT -->
+	             <data android:scheme="tel" />
+	            
+       		  </intent-filter>        
+  </activity>
+  
+            <activity android:name="com.dinkydetails.telly.ContactListActivity"
+             android:configChanges="orientation|keyboardHidden"
+            >
+            
+              <!-- To open main app -->
+       		  
+       		  <intent-filter>
+       		      
+       		       <action android:name="android.intent.action.MAIN" />
+       		       <category  android:name="android.intent.category.LAUNCHER"/>
+       		      
+       		  </intent-filter>
+            
+            
+        </activity>
+  <activity android:name="com.dinkydetails.telly.AddContactActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboardHidden"></activity>
+        
+        <receiver 
+             android:name="com.dinkydetails.telly.PhonecallReceiver" 
+             android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                 <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+            
+       </receiver> 
+
+    </application>
+
+</manifest>

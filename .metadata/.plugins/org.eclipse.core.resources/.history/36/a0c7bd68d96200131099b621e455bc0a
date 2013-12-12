@@ -1,0 +1,51 @@
+package com.dinkydetails.telly.model;
+
+
+import java.io.Serializable;
+
+@SuppressWarnings("serial") //with this annotation we are going to hide compiler warning
+public class Contact implements Serializable{
+	
+	private String firstName;
+	
+	private String lastName;
+	
+	private String phNo;
+	
+	private String imagePath;
+	
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getPhNo() {
+		return phNo;
+	}
+
+	public void setPhNo(String phNo) {
+		this.phNo = phNo;
+	}
+
+	public String getImagePath() {
+		return imagePath;
+	}
+
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
+	}
+
+	
+
+}

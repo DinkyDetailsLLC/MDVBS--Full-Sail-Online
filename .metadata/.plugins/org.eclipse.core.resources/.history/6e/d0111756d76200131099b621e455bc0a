@@ -1,0 +1,82 @@
+package com.dinkydetails.telly.Utils;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+import com.example.democallapp.AppConstants;
+
+import android.app.Activity;
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.util.DisplayMetrics;
+import android.util.Log;
+import android.view.WindowManager;
+
+public class Utils {
+	
+	
+	public static String moveBitmap(Context c, String uri) 
+	{
+		if(AppConstants.DEBUG)Log.v(AppConstants.DEBUG_TAG,"moveBitmap() called ");
+		
+		String path = getNewImagePath(c);
+		try 
+		{
+			InputStream is = c.getContentResolver().openInputStream(Uri.parse(uri));
+			OutputStream os = new FileOutputStream(path);
+			byte[] buf = new byte[1024];
+			while (is.read(buf) > 0) 
+			{
+				os.write(buf);
+			}
+			is.close();
+			os.close();
+		} 
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+			return null;
+		}
+		
+		return path;
+	}
+	
+	public static String getNewImagePath(Context c)
+	{
+		if(AppConstants.DEBUG)Log.v(AppConstants.DEBUG_TAG,"getNewImagePath() called ");
+		
+		String rst = c.getExternalCacheDir().getAbsolutePath();
+		
+		if (!new File(rst).exists()) 
+		new File(rst).mkdirs();
+		
+		Calendar cal = Calendar.getInstance();
+		
+		rst += "/img_" + cal.getTimeInMillis() +".cache";
+				
+		return rst;
+	}
+	
+	public static Bitmap getBmpFromPath(Activity c, String path)
+	{
+		BitmapFactory.Options opts = new BitmapFactory.Options();
+		opts.inJustDecodeBounds = true;
+		BitmapFactory.decodeFile(path, opts);
+		WindowManager wm = c.getWindowManager();
+		DisplayMetrics dm = new DisplayMetrics();
+		wm.getDefaultDisplay().getMetrics(dm);
+		int max_dim = Math.max(dm.widthPixels, dm.heightPixels);
+		opts.inSampleSize = Math.max(1,
+				(Math.max(opts.outWidth, opts.outHeight) + max_dim / 2)
+						/ max_dim);
+		opts.inJustDecodeBounds = false;
+		return BitmapFactory.decodeFile(path, opts);
+	}
+
+}

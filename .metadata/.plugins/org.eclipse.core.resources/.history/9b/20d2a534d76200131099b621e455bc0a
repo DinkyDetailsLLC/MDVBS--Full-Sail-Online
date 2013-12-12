@@ -1,0 +1,53 @@
+package com.example.democallapp.Utils;
+
+import com.example.democallapp.AppConstants;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.util.Log;
+
+public class LibFile 
+{
+	Context context;
+	
+	SharedPreferences settings;
+	
+	private static LibFile instance;
+	
+	public static LibFile getInstance(Context context)
+	{
+		if(instance == null)
+		{
+			instance = new LibFile(context);
+		}
+		return instance;
+	}
+	
+	private LibFile(Context context)
+	{	
+		this.context  = context;
+		
+	    settings = context.getSharedPreferences(AppConstants.PREFS_NAME,0);		
+	}
+	
+	
+	public void saveIncomingCount(int incomingCount) 
+	{	
+		settings.edit().putInt("incomingCount", incomingCount).commit();
+	}
+	public int getIncomingCount()
+	{		
+		return settings.getInt("incomingCount", 0 );
+	}
+	
+	public void saveOutgoingCount(int outgoingCount) 
+	{	
+		settings.edit().putInt("outgoingCount", outgoingCount).commit();
+	}
+	public int getOutgoingCount()
+	{		
+		return settings.getInt("outgoingCount", 0 );
+	}
+	
+	
+}
