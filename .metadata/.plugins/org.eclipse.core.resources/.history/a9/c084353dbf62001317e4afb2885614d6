@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+     
+    <ScrollView 
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="@color/black"
+	    >
+	    
+    <ImageView 
+        android:id="@+id/ivProfilePic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/add"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"/>
+    
+    <LinearLayout 
+        <!-- Image View for the Profile Pic/Prompter --> 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/ivProfilePic"
+        >
+        
+        <!--  Text Box to enter a First Name in --> 
+        <EditText 
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First name"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@+id/etLastName"
+            />
+        <!--  Text Box to enter a Last Name in --> 
+        <EditText 
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:imeOptions="actionNext"
+            android:layout_marginTop="10dp"
+             android:nextFocusDown="@+id/etPhoneNo"
+            />
+        <!--  Text Box to enter a Phone Number in --> 
+         <EditText 
+            android:id="@+id/etPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone number"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:maxLength="15"
+            />    
+        
+        
+    </LinearLayout>
+    
+    </RelativeLayout>
+    
+    </ScrollView>
+    
+    <!--  Layout for the two buttons to add/update/cancel--> 
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#63656b"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        >
+    <!--  Update button setting visibility to be off at the moment--> 
+        <Button 
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:visibility="gone"
+            />   
+        
+    <!--  Save button setting visibility to be off at the moment--> 
+        <Button 
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            />   
+      <!--  Cancel button setting visibility to be off at the moment--> 
+        <Button 
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textSize="18sp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            />   
+        
+        
+    
+    </LinearLayout>
+    
+    </RelativeLayout>

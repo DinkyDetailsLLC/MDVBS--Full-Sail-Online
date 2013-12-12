@@ -1,0 +1,27 @@
+package com.dinkydetails.telly;
+
+/** New Activity that will run when the app is launched.  */
+/** Need to move the Main Activity to a different location... but still have it prompt, maybe...  */
+public class AddContactActivity  extends Activity{
+
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) 
+	{
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.add_contact);
+		
+		init();
+		
+		Intent iContactListActivity = getIntent();
+		
+		cObj = (Contact) iContactListActivity.getSerializableExtra(AppConstants.CURRENT_OBJ);
+		
+		if(cObj != null)
+		setInformation(cObj);
+			
+		
+	}
+	
+}
