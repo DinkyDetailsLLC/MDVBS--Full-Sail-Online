@@ -8,10 +8,10 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,20 +24,24 @@ public class MainActivity extends Activity implements SensorEventListener{
 		TextView tVProximity;
 		Button btnToggle;
 		
+
+		
 		boolean isSensorEnabled;
 		
 		MediaPlayer player;
 		
 		Button btnPlayer;
 		Button btnPause;
-	//Call this activity when the app is created
+		
+		
+		//Call this activity when the app is created
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
 		tVProximity = (TextView)findViewById(R.id.tVProximity);
-		
+		//Trying to display the elf
+
 		//Create instance of sensor manager and get system service to interact with Sensor
 		isSensorInstalled = true;
 		
@@ -96,38 +100,61 @@ public class MainActivity extends Activity implements SensorEventListener{
 		isSensorEnabled = (isSensorInstalled == true)? true: false;
 		layoutViews(isSensorEnabled);
 	}
-
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
+	protected void onResume() {
+		super.onResume();
+		// Register the class as a Listener for the Proximity Sensor
+		sensorManager.registerListener(this,
+				sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY),
+				SensorManager.SENSOR_DELAY_NORMAL);
+	}
+	@Override
+	protected void onPause() {
+		// Unregister the listener
+		super.onPause();
+		sensorManager.unregisterListener(this);
 	}
 
 	@Override
+	//Method auto created with the Sensor
 	public void onAccuracyChanged(Sensor arg0, int arg1) {
 		// TODO Auto-generated method stub
 		
 	}
-
+	
+	
 	@Override
+	//Method auto created with the Sensor
 	public void onSensorChanged(SensorEvent event) {
 		// TODO Auto-generated method stub
+		// Sensor is either near or far and is determined by values 0/5.
 		
+		if(event.sensor.getType()==Sensor.TYPE_PROXIMITY){
+			if(event.values[0] <= 1){
+				tVProximity.setText("You are Near: "+String.valueOf(event.values[0]));
+				if (isSensorEnabled == true && player.isPlaying() == false)
+					player.start();
+			}
+			else{
+				tVProximity.setText("You are Far: "+String.valueOf(event.values[0]));
+				if (isSensorEnabled == true && player.isPlaying() == true)
+					player.pause();
+			}
+		}
 	}
-//Set what the button toggle is going to show. 
+	//Set what the button toggle is going to show. 
 	public void layoutViews (boolean _isSensorEnabled) {
 		if (_isSensorEnabled == true)
 		{
 			//If it is on... Hide the buttons
-			btnToggle.setText("Sensor Enabled");
+			btnToggle.setText("Sensor is Enabled");
 			btnPlayer.setVisibility(View.GONE);
 			btnPause.setVisibility(View.GONE);
 		}
 		else 
 		{
 			//If it is off... Show the buttons
-			btnToggle.setText("Sensor disabled");
+			btnToggle.setText("Sensor is disabled");
 			btnPlayer.setVisibility(View.VISIBLE);
 			btnPause.setVisibility(View.VISIBLE);
 		}
