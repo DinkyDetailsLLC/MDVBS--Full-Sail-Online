@@ -8,7 +8,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Menu;
 import android.webkit.WebView;
 
 public class SplashActivity extends Activity {
@@ -40,11 +39,5 @@ public class SplashActivity extends Activity {
 	        }, SPLASH_TIME_OUT);
 	        }
 	   
-	   
-	    @Override
-	    public boolean onCreateOptionsMenu(Menu menu) {
-	        getMenuInflater().inflate(R.menu.main, menu);
-	        return true;
-	    }
 	}
 
