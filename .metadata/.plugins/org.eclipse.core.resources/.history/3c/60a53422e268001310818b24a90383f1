@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">Movie Check</string>
+    <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
 	<string name="title_activity_splash">Movie Check</string>
     <string name="action_settings">Settings</string>
