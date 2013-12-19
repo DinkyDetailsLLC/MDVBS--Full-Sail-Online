@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MovieCheck Main Screen</title>
+<script src="index.js"></script>
+<style type="text/css">
+        body
+        {
+            padding: 2px;
+            font-size: 14pt;
+            color: ffffff;
+            font-family: Verdana;
+            background-image:url('images/background.jpg');
+        }
+         
+        .style1
+        {
+            color: #ffffff;
+            font-weight: bold;
+        }
+</style>
+
+<style>
+.bottom-three {
+	margin-bottom: 3cm;
+}
+</style>
+
+</head>
+<body>
+<div class="Help" id="Help" style="Z-INDEX: 1000; LEFT: 5%; OVERFLOW: visible; WIDTH: 90%; POSITION: absolute; TOP: 100px; HEIGHT: 300px">
+   
+
+	<h3 style="text-align:center;"><font color="white">Enter Movie Name</font></h3>
+	<p style="text-align:center;">
+            <input id="name" value="" />&nbsp;&nbsp;&nbsp;
+			<button onclick="checkMovie()"> Check it! </button>
+        </p>
+	
+
+</div>
+</body>
+</html>
