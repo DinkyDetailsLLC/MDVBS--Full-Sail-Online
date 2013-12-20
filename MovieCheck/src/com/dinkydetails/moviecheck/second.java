@@ -113,7 +113,7 @@ public class second extends Activity {
 			super.onPreExecute();
 			//Showing Dialog of loading 
 			Dialog = new ProgressDialog(second.this);
-			Dialog.setMessage("Loading Dine In...");
+			Dialog.setMessage("Loading Please wait...");
 			Dialog.show();
 		}
 //Method called after preexecute() and include code to be executed in threads at the back ground like fetching json data
