@@ -25,7 +25,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		// changing main layout to show the splash first
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_splash);
 
 		// Tie my webviews and set up the webview to handle JS
 		WebView webView = (WebView) findViewById(R.id.webView);
@@ -57,12 +57,18 @@ public class MainActivity extends Activity implements OnClickListener {
 		}
 
 		// Call the function changeActivity defined in my JS of my HTML
-		public void changeActivity(String movieName) {
-			// Call the Movie App and store the intent to pass it onto the app.
-			Log.e("XXXXXXXXXXXXXXX", "X==========>" + movieName);
+		public void changeActivity(String movie_name) {
+			// Call the WeatherApp and store the intent to pass it onto the app.
+			Log.e("XXXXXXXXXXXXXXX", "X==========>" + movie_name);
 			Intent i = new Intent(MainActivity.this, second.class);
-			i.putExtra("movie_name", movieName);
+			i.putExtra("movie_name", movie_name);
 			startActivity(i);
+
+			// PackageManager pm = getPackageManager();
+			// Intent intent =
+			// pm.getLaunchIntentForPackage("com.dan.weatherpull");
+			// intent.putExtra("zip", zip);
+			// startActivity(intent);
 		}
 
 	}

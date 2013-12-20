@@ -58,7 +58,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		// Call the function changeActivity defined in my JS of my HTML
 		public void changeActivity(String movieName) {
-			// Call the Movie App and store the intent to pass it onto the app.
+			// Call the WeatherApp and store the intent to pass it onto the app.
 			Log.e("XXXXXXXXXXXXXXX", "X==========>" + movieName);
 			Intent i = new Intent(MainActivity.this, second.class);
 			i.putExtra("movie_name", movieName);
