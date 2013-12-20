@@ -1,13 +1,3 @@
-//Dan Annis
-//MDF 3
-//Week 3 and 4
-//Hybrid App + Widget + Action Bar
-/**
-    What did you do for your hybrid project?
-    What would you have done differently if you could?
-    List a few things that could use more clarification.
-    Do you think hybrid applications have a place in mobile development? Why?
-**/
 package com.dinkydetails.moviecheck;
 
 import android.annotation.SuppressLint;
@@ -28,7 +18,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	// Setting up known variables
 	JavaScriptInterface JSInterface;
 
-	Button find;
+	Button refuse;
 
 	@SuppressLint("SetJavaScriptEnabled")
 	@Override
@@ -36,6 +26,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		// changing main layout to show the splash first
 		setContentView(R.layout.activity_main);
+
 		// Tie my webviews and set up the webview to handle JS
 		WebView webView = (WebView) findViewById(R.id.webView);
 		webView.getSettings().setJavaScriptEnabled(true);
@@ -46,13 +37,14 @@ public class MainActivity extends Activity implements OnClickListener {
 		// Load the local file
 		webView.loadUrl("file:///android_asset/www/index.html");
 
-		find = new Button(MainActivity.this);
-		find.setOnClickListener(this);
+		refuse = new Button(MainActivity.this);
+		refuse.setOnClickListener(this);
 
 		WebSettings ws = webView.getSettings();
 		ws.setJavaScriptEnabled(true);
 		// Add the interface to record javascript events
-		webView.addJavascriptInterface(find, "find");
+		// webView.addJavascriptInterface(valid, "valid");
+		webView.addJavascriptInterface(refuse, "refuse");
 
 	}
 
@@ -79,7 +71,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 
-		if (v.equals(find)) {
+		if (v.equals(refuse)) {
 			Log.e("XXXXXXXXXXXXXXX", "XXXXXXXXXXXXXXX");
 
 		}
