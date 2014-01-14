@@ -2,12 +2,7 @@
 //MDF 3
 //Week 3 and 4
 //Hybrid App + Widget + Action Bar
-/**
-    What did you do for your hybrid project?
-    What would you have done differently if you could?
-    List a few things that could use more clarification.
-    Do you think hybrid applications have a place in mobile development? Why?
-**/
+
 package com.dinkydetails.moviecheck;
 
 import android.annotation.SuppressLint;

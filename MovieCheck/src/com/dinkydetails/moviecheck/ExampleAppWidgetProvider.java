@@ -19,7 +19,6 @@ import android.widget.EditText;
 import android.widget.RemoteViews;
 
 public class ExampleAppWidgetProvider extends AppWidgetProvider {
-	  
 	 
 	  public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
 	    final int N = appWidgetIds.length;
