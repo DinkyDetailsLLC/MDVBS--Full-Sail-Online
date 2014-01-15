@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<ScrollView 
+   android:layout_width="match_parent"
+   android:layout_height="match_parent" >
+   <RelativeLayout 
+       android:id="@+id/relative1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/pinkgirl" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="25dp"
+        android:text="@string/bname" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="17dp"
+        android:text="save" 
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:enabled="false" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText4"
+        android:layout_alignParentRight="true"
+        android:ems="10" 
+        android:enabled="false"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:enabled="false"/>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:ems="10" 
+        android:enabled="false"/>
+     <ImageView
+        android:id="@+id/dividerlarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        
+        android:src="@drawable/dividerlarge" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView1"
+        android:src="@drawable/editpink" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignTop="@+id/button1"
+        android:src="@drawable/compasspink" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:text="@string/bplace" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText4"
+        android:layout_alignLeft="@+id/textView5"
+        android:text="@string/weight" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText3"
+        android:layout_alignLeft="@+id/textView4"
+        android:text="@string/length" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText2"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="@string/birthday" />
+
+</RelativeLayout>
+</ScrollView>
+</LinearLayout>

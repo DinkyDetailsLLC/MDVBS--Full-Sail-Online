@@ -78,3 +78,54 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:13.427
+!MESSAGE startup_screen.xml: Couldn't resolve resource @string/fourth
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:13.433
+!MESSAGE startup_screen.xml: Couldn't resolve resource @string/fifth
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:13.437
+!MESSAGE startup_screen.xml: Couldn't resolve resource @string/sixth
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:13.439
+!MESSAGE startup_screen.xml: Couldn't resolve resource @string/ninth
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:13.441
+!MESSAGE startup_screen.xml: Couldn't resolve resource @string/seventh
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:13.443
+!MESSAGE startup_screen.xml: Couldn't resolve resource @string/eighth
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:13.445
+!MESSAGE startup_screen.xml: Couldn't resolve resource @string/first
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:13.477
+!MESSAGE startup_screen.xml: Couldn't resolve resource @string/eleventh
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:13.479
+!MESSAGE startup_screen.xml: Couldn't resolve resource @string/tenth
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:33.403
+!MESSAGE profile_screen.xml: Couldn't resolve resource @string/addkiddo
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:33.596
+!MESSAGE profile_screen.xml: Couldn't resolve resource @string/name
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:33.603
+!MESSAGE profile_screen.xml: Couldn't resolve resource @string/dob
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:33.604
+!MESSAGE profile_screen.xml: Couldn't resolve resource @string/imp
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:33.675
+!MESSAGE profile_screen.xml: Couldn't resolve resource @string/save
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:33.676
+!MESSAGE profile_screen.xml: Couldn't resolve resource @array/date
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:33.717
+!MESSAGE profile_screen.xml: Couldn't resolve resource @array/month
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2014-01-14 21:46:33.718
+!MESSAGE profile_screen.xml: Couldn't resolve resource @array/year
